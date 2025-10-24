@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+    <meta name="description" content="دليل شامل لفعاليات مدينة حمص: ثقافية، فنية، اجتماعية ورياضية. هدفنا تسهيل الوصول إلى الأنشطة وتعزيز المشاركة المجتمعية.">
+  <title>اتصل بنا - دليل فعاليات حمص العدية</title>
+<!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- ملف CSS العام (أضف تحت ما عندك) -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+
+<body id="body"><!--  شاشة التحميل -->
+<div id="loading-screen" class="loading-screen">
+  <div class="spinner"></div>
+  <p class="loading-text">جارٍ التحميل...</p>
+</div>
+
+  <!-- Header -->
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index1.html">
+          <img src="data:image/jpeg;base64,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"alt="شعار الموقع"  width="40" height="40" class="me-2 rounded-circle">
+          <span class="translate" data-ar="دليل فعاليات حمص العديّة" data-en="Homs Events Guide – Al-Adiyah">دليل فعاليات حمص العديّة</span>
+        </a>
+    
+        <ul class="nav">
+          <li class="nav-item"><a href="index1.html" class="nav-link text-white">الرئيسية</a></li>
+          <li class="nav-item"><a href="events1.html" class="nav-link text-white">الفعاليات</a></li>
+            <li class="nav-item"><a href="event1.html"  class="nav-link text-white">تفاصيل الفعالية</a></li>
+          <li class="nav-item"><a href="about1.html" class="nav-link text-white">عن الدليل</a></li>
+          <li class="nav-item"><a href="contact1.html" class="nav-link text-white active fw-bold">اتصل بنا</a></li>
+        </ul>
+        
+        <!-- 🔄 أزرار تغيير اللغة -->
+        <div class="lang-switch d-flex align-items-center">
+          <img id="flag-ar" 
+               src="https://flagcdn.com/w40/sy.png" 
+               width="32" height="22" class="mx-1" 
+               alt="Arabic" title="العربية 🇸🇾">
+
+          <img id="flag-en" 
+               src="https://flagcdn.com/w40/us.png" 
+               width="32" height="22" class="mx-1" 
+               alt="English" title="English 🇺🇸">
+        </div>
+        
+        <!-- أزرار تغيير الألوان -->
+        <div id="color">
+          <button class="b" onclick=" Colorblack()" 
+                  aria-label="تفعيل الوضع المظلم" 
+                  title="الوضع المظلم 🌙"
+                  role="button"
+                  tabindex="0">
+          </button>
+          <button class="w" onclick=" Colorwiht()" 
+                  aria-label="تفعيل الوضع الفاتح" 
+                  title="الوضع الفاتح ☀️"
+                  role="button"
+                  tabindex="0">
+          </button>
+        </div>
+
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+
+    <!-- القسم الأول: مقدمة -->
+    <section class="mb-5 text-center">
+      <h2 class="mb-3">📬 تواصل معنا</h2>
+      <p class="text-muted" id="k">نسعد بتلقي استفساراتكم واقتراحاتكم عبر النموذج أدناه أو من خلال وسائل التواصل المتاحة.</p>
+    </section>
+
+    <!-- القسم الثاني: نموذج الاتصال -->
+    <section class="row">
+      <div class="col-md-7">
+        <form id="contactForm" class="p-4 border rounded shadow-sm bg-light">
+          <!-- مكان عرض الرسائل -->
+          <div id="formAlert"></div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">الاسم الكامل</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">الرسالة</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">إرسال</button>
+        </form>
+      </div>
+
+      <!-- القسم الثالث: معلومات بديلة -->
+      <div class="col-md-5">
+        <div class="p-4 bg-white border rounded shadow-sm">
+          <h5>📌 معلومات التواصل</h5>
+          <p><strong>البريد العام:</strong> info@homs-events.com</p>
+          <p><strong>الهاتف:</strong> +963-988-123-456</p>
+          <div class="mt-3">
+            <a href="#" class="btn btn-outline-primary btn-sm m-1">فيسبوك</a>
+            <a href="#" class="btn btn-outline-info btn-sm m-1">تويتر</a>
+            <a href="#" class="btn btn-outline-danger btn-sm m-1">انستغرام</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p class="m-0">&copy; 2025 جميع الحقوق محفوظة - دليل فعاليات حمص العدية</p>
+  </footer>
+
+  <!-- Bootstrap + JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
